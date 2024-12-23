@@ -180,3 +180,34 @@ a{
 .princing ul li{
     margin-top: 8px;
 }
+
+/*****************  PRICING *****************/
+
+.team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: white;
+    border-radius: 100px;
+    border: 2px solid var(--primary);
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.social-icons a:hover{
+    color: var(--primary);
+    background-color: transparent;
+}
