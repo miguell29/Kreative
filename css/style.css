@@ -1,47 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-:root{
+:root {
     --primary: #0d6efd;
     --dark: #21252f;
     --body: #888;
-    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
 }
 
-body{
+body {
     font-family: "Sora", serif;
     line-height: 1.7;
     color: var(--body);
 }
 
-h1,h2,h3,h4,h5,h6,
-.display-4{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
     color: var(--dark);
     font-weight: 700;
 }
 
-a{
+a {
     color: var(--dark);
     text-decoration: none;
 }
 
-.navbar{
+.navbar {
     box-shadow: var(--box-shadow);
 }
 
-.navbar .logo{
+.logo {
     width: 160px;
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
 }
-.btn{
+
+.btn {
     padding: 14px 18px;
     border-width: 2px;
     border-radius: 0;
 }
 
-.hero{
+.hero {
     background-image: url(../img/cover.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -49,14 +56,15 @@ a{
     position: relative;
     z-index: 2;
 }
-.hero::after{
+
+.hero::after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(21,20,51,0.8);
+    background-color: rgba(21, 20, 51, 0.8);
     z-index: -1;
 }
 
@@ -65,24 +73,24 @@ a{
 
 /*****************  SERVICES *****************/
 
-.section{
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.card-effect{
+.card-effect {
     box-shadow: var(--box-shadow);
     background-color: white;
     padding: 25px;
     transition: all 0.35s ease;
 }
 
-.card-effect:hover{
+.card-effect:hover {
     box-shadow: none;
     transform: translateY(5px);
 }
 
-.iconbox{
+.iconbox {
     width: 54px;
     height: 54px;
     display: flex;
@@ -95,13 +103,13 @@ a{
     flex: none;
 }
 
-.service{
+.service {
     position: relative;
     z-index: 2;
     overflow: hidden;
 }
 
-.service::after{
+.service::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -114,22 +122,24 @@ a{
     transition: all 0.4s ease;
 }
 
-.service:hover .iconbox{
+.service:hover .iconbox {
     background-color: white;
     color: var(--primary);
 }
+
 .service:hover h5,
-.service:hover p{
+.service:hover p {
     color: white;
 }
-.service:hover::after{
+
+.service:hover::after {
     opacity: 1;
     top: 0;
 }
 
 /*****************  FEATURES *****************/
 
-.col-img{
+.col-img {
     background-image: url(../img/cover2.jpg);
     background-position: center;
     background-size: cover;
@@ -139,18 +149,18 @@ a{
 
 /*****************  PROJECTS *****************/
 
-.project{
+.project {
     position: relative;
     overflow: hidden;
 }
 
-.project .overlay{
+.project .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(21,20,51,0.8);
+    background-color: rgba(21, 20, 51, 0.8);
     padding: 30px;
     display: flex;
     align-items: flex-end;
@@ -158,42 +168,44 @@ a{
     opacity: 0;
 }
 
-.project image{
+.project image {
     transition: all 0.4s ease;
 }
 
-.project:hover .overlay{
+.project:hover .overlay {
     opacity: 1;
 }
-.project:hover img{
+
+.project:hover img {
     transform: scale(1.1);
 }
 
 
 /*****************  PRICING *****************/
 
-.princing i{
+.princing i {
     font-size: 20px;
     color: var(--primary);
 }
 
-.princing ul li{
+.princing ul li {
     margin-top: 8px;
 }
 
 /*****************  PRICING *****************/
 
-.team-member img{
+.team-member img {
     width: 125px;
     height: 125px;
     border-radius: 100px;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     justify-content: center;
 }
 
-.social-icons a{
+.social-icons a {
     width: 34px;
     height: 34px;
     background-color: var(--primary);
@@ -207,18 +219,39 @@ a{
     align-items: center;
     transition: all 0.4s ease;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: var(--primary);
     background-color: transparent;
 }
 
 /*****************  CONTACT *****************/
 
-form input.form-control{
+form input.form-control {
     height: 56px;
 }
-form .form-control{
+
+form .form-control {
     border: transparent;
     border-radius: 0;
-    background-color: rgba(0,0,0,0.02);
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/*****************  FOOTER *****************/
+
+.footer-top {
+    padding: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: white
+}
+
+.footer-bottom {
+    background-color: #21252fe5;
 }
